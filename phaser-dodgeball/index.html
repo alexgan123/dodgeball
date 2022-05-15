@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Dodgeball</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+            /* styling for the invisible text that loads up the font  */
+            .hiddenText {
+                font-family: 'Roboto', sans-serif;
+                visibility: hidden;
+                height: 0;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: #073655;
+            }
+        </style>
+
+        <script src="js/phaser.min.js"></script>
+        <script src="js/load.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/play.js"></script>
+        <script src="js/game.js"></script>
+    </head>
+    <body>
+        <p class="hiddenText">.</p>
+        <div id="game"></div>
+    </body>
+</html>
