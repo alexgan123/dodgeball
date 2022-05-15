@@ -110,8 +110,8 @@ class Play {
         let downDown = this.arrow.down.isDown ? 1 : 0;
 
         // move the player based on input
-        this.player.x += 12 * (rightDown - leftDown);
-        this.player.y += 12 * (downDown - upDown);
+        this.player.body.velocity.x = 400 * (rightDown - leftDown);
+        this.player.body.velocity.y = 400 * (downDown - upDown);
     }
 
     takeCoin() {
